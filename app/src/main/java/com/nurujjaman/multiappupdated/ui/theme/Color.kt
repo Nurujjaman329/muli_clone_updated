@@ -1,4 +1,4 @@
-package org.waxmoon.ui.theme
+package com.nurujjaman.multiappupdated.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

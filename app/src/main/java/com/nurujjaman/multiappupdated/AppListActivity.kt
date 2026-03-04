@@ -1,4 +1,4 @@
-package org.waxmoon
+package com.nurujjaman.multiappupdated
 
 import android.content.Context
 import android.content.Intent
@@ -24,7 +24,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.*
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.tooling.preview.Preview
-import org.waxmoon.ui.theme.GithubMultiAppTheme
+import com.nurujjaman.multiappupdated.ui.theme.GithubMultiAppTheme
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
@@ -337,19 +337,19 @@ fun ApkItem(modifier: Modifier = Modifier, apkInfo: ApkInfo) {
 
 var clickMenu: (Int)->Unit = { index->
     when (index) {
-        MENU_ENABLE_GP -> {
-            var googlePkgs =
-                listOf("com.google.android.gms", "com.google.android.gsf", "com.android.vending")
-            for (pkg in googlePkgs) {
-                HackApi.installPackageFromHost(pkg, userSpace, false)
-            }
-        }
-        MENU_OPEN_GP -> {
-            var intent:Intent?
-            intent = MoonApplication.INSTANCE().packageManager.getLaunchIntentForPackage("com.android.vending")
-            intent?.addFlags(Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED)
-            HackApi.startActivity(intent, userSpace)
-        }
+        // MENU_ENABLE_GP -> {
+        //     var googlePkgs =
+        //         listOf("com.google.android.gms", "com.google.android.gsf", "com.android.vending")
+        //     for (pkg in googlePkgs) {
+        //         HackApi.installPackageFromHost(pkg, userSpace, false)
+        //     }
+        // }
+        // MENU_OPEN_GP -> {
+        //     var intent:Intent?
+        //     intent = MoonApplication.INSTANCE().packageManager.getLaunchIntentForPackage("com.android.vending")
+        //     intent?.addFlags(Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED)
+        //     HackApi.startActivity(intent, userSpace)
+        // }
     }
 }
 

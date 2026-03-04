@@ -1,4 +1,4 @@
-package org.waxmoon;
+package com.nurujjaman.multiappupdated;
 
 import android.app.Application;
 import android.content.Context;

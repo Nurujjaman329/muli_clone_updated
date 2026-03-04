@@ -9,7 +9,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath "com.android.tools.build:gradle:7.0.2"
+        classpath "com.android.tools.build:gradle:7.4.2"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
@@ -30,6 +30,6 @@ ext {
     hackJarName = "moon.jar"
     versionCode = 1012
     versionName = "1.0.12"
-    masterPkg = "org.waxmoon.github64"
-    assistPkg = "org.waxmoon.github32"
+    masterPkg = "com.nurujjaman.multiappupdated"
+    assistPkg = "com.nurujjaman.multiappupdated.assist"
 }

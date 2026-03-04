@@ -1,4 +1,4 @@
-package org.waxmoon;
+package com.nurujjaman.multiapp.assist;
 
 import com.hack.opensdk.HackApplication;
 

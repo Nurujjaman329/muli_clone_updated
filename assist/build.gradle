@@ -15,9 +15,7 @@ android {
 
         ndk.abiFilters 'armeabi-v7a'
 
-        if (!rootProject.ext.isMasterPkg) {
-            manifestPlaceholders = [masterPkg: "${rootProject.ext.masterPkg}"]
-        }
+        manifestPlaceholders = [masterPkg: "${rootProject.ext.masterPkg}"]
     }
 
     buildTypes {

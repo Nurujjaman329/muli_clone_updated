@@ -1,4 +1,4 @@
-package org.waxmoon;
+package com.nurujjaman.multiapp.assist;
 
 import android.app.Activity;
 import android.content.ComponentName;
